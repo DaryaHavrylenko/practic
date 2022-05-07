@@ -5,6 +5,7 @@
   --prymery-bgc: #ffffff;
   --white-color: #FFFFFF;
   --black-color: #000000;
+  --sekondary-font: 'inter', sans-serif;
 }
 
 body {
@@ -16,9 +17,19 @@ font-weight: 400;
   font-family: Roboto, sans-serif;
 
 }
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
 
 /* СПИСКИ */
-.list {
+ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -47,15 +58,50 @@ font-weight: 400;
 }
 .button-header {
     color: var(--white-color);
-    background-color: var(--black-color);
+    background-color: transparent;
     font-family: Roboto;
     font-size: 13px;
     font-weight: inherit;
     line-height: 16px;
     letter-spacing: 0em;
-/* border: 1px solid #000000; */
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-right: auto;
+/* height: 40px;
+    width: 138px; */
+  
+}
+.container {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+   
+}
+.logo.link {
+    display: flex;
+    align-items: center;
 }
 
+.logo-image {
+    margin-right: 8px;
+
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 52px;
+}
+.site-nav > .list {
+    display: flex;
+}
 /* HERO */
  .section-hero {
      background-color: var(--black-color);
@@ -77,14 +123,17 @@ line-height: 2.72;
  .link-button {
      color: var(--white-color);
      background-color: var(--akcent-color);
-
+padding: 15px 37px;
     font-family: inherit;
     font-size: 15px;
-    
+   
     line-height: 30px;
     letter-spacing: 0em;
     text-decoration: none;
+    border: transparent;
     border-radius: 4px;
+    /* height: 60px;
+        width: 166px; */
  }
 
  /* Your reliable web and app development partner*/
@@ -118,12 +167,13 @@ line-height: 2.72;
  color: var(--prymery-text-color);
  }
  .button-link {
+     
    font-family: inherit;
     font-size: 24px;
     line-height: 1.58;
    border: none;
     color: var(--tittle-text-color);
-    background-color: var(--prymery-bgc);
+    background-color: transparent;
  }
  .button-link:hover,
  .button-link:focus {
@@ -134,7 +184,16 @@ line-height: 2.72;
     line-height: 1.47;
 color: var(--tittle-text-color);
  }
-
+.btn {
+    font-size: 15px;
+        line-height: 2;
+        letter-spacing: 0em;
+        font-family: inherit;
+padding: 15px 49px;
+background-color: var(--akcent-color);
+color: var(--white-color);
+border-radius: 4px;
+}
  /* We're proud of our work */
  .section-proud {
      background-color: palevioletred;
@@ -176,4 +235,81 @@ color: #737373;
     font-size: 20px;
 line-height: 1.4;
 color: #000000;
+}
+
+/* REQWEST */
+.button-reqwest {
+    padding: 18px 47px;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--akcent-color);
+    height: 60px;
+        width: 174px;
+        border: transparent;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 12px;
+}
+.modal-caption {
+    
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.52;
+        letter-spacing: 0em;
+        color: #000000;
+}
+
+/* RESOURCES */
+.subtitle {
+   
+        font-size: 14px;
+        
+        line-height: 2/14;
+        letter-spacing: 0em;
+       
+}
+.desc-resourse {
+    
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.58;
+        letter-spacing: 0em;
+        color: #000000;
+}
+
+/* FAQ */
+.caption-text {
+    
+        font-size: 13px;
+        
+        line-height: 2.3;
+        letter-spacing: 0em;
+        
+}
+.text-list {
+   
+        font-size: 19px;
+     
+        line-height: 1.26;
+        letter-spacing: 0em;
+        color: #000000;
+}
+
+/* kickstart your tech career */
+
+.link.career {
+    /* display: flex;
+    padding: 16px 42px; */
+text-align: center;
+height: 62px;
+    width: 200px;
+        font-size: 15px;
+     
+        line-height: 2;
+        letter-spacing: 0em;
+        color: #0A8BFE;
+        
+    border: 2px solid #E8E8E8;
+    border-radius: 30px;
+   
 }

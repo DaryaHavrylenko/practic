@@ -7,7 +7,13 @@
     <title>Appello</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,21 +22,30 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html" class="logo link" aria-label="Logo Appello">
-        <img src="./images/vector.svg" alt="Logo Appello" width="26" height="30" />Appello
-      </a>
-      <nav class="site-nav">
-        <ul class="list">
-          <li><a href="" class="link">Home</a></li>
-          <li><a href="" class="link">Portfolio</a></li>
-          <li><a href="" class="link">Process</a></li>
-          <li><a href="" class="link">Team</a></li>
-          <li><a href="" class="link">Resources</a></li>
-        </ul>
+      <div class="container">
+        <a href="/index.html" class="logo link" aria-label="Logo Appello">
+          <img
+            class="logo-image"
+            src="./images/vector.svg"
+            alt="Logo Appello"
+            width="26"
+            height="30"
+          />Appello
+        </a>
+        <nav class="site-nav">
+          <ul class="list">
+            <li><a href="" class="link">Home</a></li>
+            <li><a href="" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Process</a></li>
+            <li><a href="" class="link">Team</a></li>
+            <li><a href="" class="link">Resources</a></li>
+          </ul>
+        </nav>
         <button type="button" class="button-header">Get project quote</button>
-      </nav>
+      </div>
     </header>
     <main>
+      <div class="container">
       <section class="section-hero">
         <h1 class="hero">
           Leaders in Software<br />
@@ -41,6 +56,7 @@
           be done.
         </p>
         <a href="" class="link-button" type="button">View our work</a>
+        </div>
       </section>
       <section class="section">
         <h2 class="section-tittle">Your reliable web and app development partner</h2>
@@ -60,6 +76,7 @@
         </ul>
       </section>
       <section class="section">
+        <div class="container">
         <h2 class="tittle">Where are you now?</h2>
         <p class="desc-tittle">
           Use the tabs below to identify what stage you're at so we can help you to move on to the
@@ -100,7 +117,8 @@
             </p>
           </li>
         </ul>
-        <a href="" class="link-button" type="button">Contact us</a>
+        <a href="" class="btn" type="button">Contact us</a>
+        </div>
       </section>
       <section class="section-proud">
         <h2 class="title">We're proud of our work</h2>
@@ -219,13 +237,13 @@
         </ul>
       </section>
       <!--ДОДЕЛАТЬ СЕКЦИЮ НИЖЕ-->
-      <section>
-        <h2>Request a callback from our expert team</h2>
-        <button type="button">Send request</button>
+      <section class="section">
+        <h2 class="modal-caption">Request a callback from our expert team</h2>
+        <button type="button" class="button-reqwest">Send request</button>
       </section>
-      <section>
-        <h2>We're industry approved</h2>
-        <p>
+      <section class="section">
+        <h2 class="tittle">We're industry approved</h2>
+        <p class="text-tittle">
           Appello is one of Australia’s most highly rated software companies by recognisable
           directories like Clutch, GoodFirms, AppFutura and many more.
         </p>
@@ -244,45 +262,47 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Resources</h2>
-        <p>
+      <section class="section">
+        <h2 class="caption">Resources</h2>
+        <p class="subtitle">
           Sharing the latest and greatest from industry trends, insights, inspiration and successful
           Appello ventures.
         </p>
         <ul class="list">
           <li>
-            <a href="">
+            <a href="" class="link">
               <img src="./images/resourses/res1.jpg" alt="chief design" width="340" />
-              <h3>Meet our Chief Design Officer, Pharaoh Woghiren</h3>
-              <p>Meet our Chief Design Officer, Pharaoh Woghiren.</p>
+              <h3 class="desc-resourse">Meet our Chief Design Officer, Pharaoh Woghiren</h3>
+              <p class="text-tittle">Meet our Chief Design Officer, Pharaoh Woghiren.</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="link">
               <img
                 src="./images/resourses/res2.jpg"
                 alt="Refreshing Mobile Applications"
                 width="340"
               />
-              <h3>
+              <h3 class="desc-resourse">
                 Refreshing Mobile Applications: How to Know When a Mobile App Redesign is Necessary?
               </h3>
-              <p>
+              <p class="text-tittle">
                 When to consider a mobile app redesign and signs to look out for to make sure your
                 app captures user attention and loyalty.
               </p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="link">
               <img
                 src="./images/resourses/res3.jpg"
                 alt="Your Guide to Developing the Best People Management Software Solution"
                 width="340"
               />
-              <h3>Your Guide to Developing the Best People Management Software Solution</h3>
-              <p>
+              <h3 class="desc-resourse">
+                Your Guide to Developing the Best People Management Software Solution
+              </h3>
+              <p class="text-tittle">
                 Custom employee management software or people management software solutions will be
                 extremely beneficial to not only your HR department but the entire company.
               </p>
@@ -290,37 +310,51 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>FAQ</h2>
-        <p>
+      <section class="section">
+        <h2 class="caption">FAQ</h2>
+        <p class="caption-text">
           Below is a list of frequently asked questions. If you can't find what you're looking for
           then feel free to ask us directly via email
         </p>
         <ul class="list">
-          <li><p>1. What is your privacy and security policy?</p></li>
+          <li><p class="text-list">1. What is your privacy and security policy?</p></li>
           <li>
-            <p>2. How long is the development timeline?</p>
+            <p class="text-list">2. How long is the development timeline?</p>
           </li>
-          <li><p>3. What type of companies do you work with?</p></li>
-          <li><p>4. How many team members for a project?</p></li>
-          <li><p>5. What warranties are to ensure deliverables are met?</p></li>
-          <li><p>6. Do you outsource work?</p></li>
+          <li><p class="text-list">3. What type of companies do you work with?</p></li>
+          <li><p class="text-list">4. How many team members for a project?</p></li>
+          <li><p class="text-list">5. What warranties are to ensure deliverables are met?</p></li>
+          <li><p class="text-list">6. Do you outsource work?</p></li>
         </ul>
       </section>
-      <section>
-        <h2>kickstart your tech career</h2>
-        <p>
+      <section class="section">
+        <h2 class="tittle">kickstart your tech career</h2>
+        <p class="desc">
           We're always on the lookout for bright strategic minds, creative superstars and coding
           gurus. Select one of our current opportunities below to apply.
         </p>
         <ul class="list">
-          <li><a href="">Backend Engineer</a></li>
-          <li><a href="">Product Designer</a></li>
-          <li><a href="">Frontend Engineer</a></li>
-          <li><a href="">Project Manager></a></li>
-          <li><a href="">Finance Director</a></li>
-          <li><a href="">Backend Engineer</a></li>
-          <li><a href="">Product Designer</a></li>
+          <li>
+            <a href="" class="link career">Engineer</a>
+          </li>
+          <li>
+            <a href="" class="link career">Product Designer</a>
+          </li>
+          <li>
+            <a href="" class="link career">Frontend Engineer</a>
+          </li>
+          <li>
+            <a href="" class="link career">Project Manager</a>
+          </li>
+          <li>
+            <a href="" class="link career">Finance Director</a>
+          </li>
+          <li>
+            <a href="" class="link career">Engineer</a>
+          </li>
+          <li>
+            <a href="" class="link career">Product Designer</a>
+          </li>
         </ul>
       </section>
     </main>
