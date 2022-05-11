@@ -3,7 +3,7 @@
   --tittle-text-color: #000000;
   --akcent-color: #0a8bfe;
   --prymery-bgc: #ffffff;
-  --white-color: #FFFFFF;
+  --white-color: #ffffff;
   --black-color: #000000;
   --sekondary-font: 'inter', sans-serif;
 }
@@ -11,305 +11,391 @@
 body {
   background-color: var(--prymery-bgc);
   color: var(--prymery-text-color);
-font-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: normal;
   font-family: Roboto, sans-serif;
-
 }
-h1,h2,h3,h4,p {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
 }
 img {
-    display: block;
+  display: block;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* СПИСКИ */
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 /* header */
 
 .logo {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 .header {
-    background-color: var(--black-color);
-   
+  background-color: var(--black-color);
 }
 .site-nav .link {
-    color: var(--white-color);
-    font-family: Roboto, sans-serif;
-    
-    font-size: 13px;
-    
-    line-height: 30px;
-    letter-spacing: 0em;    
+  color: var(--white-color);
+  font-family: Roboto, sans-serif;
+
+  font-size: 13px;
+
+  line-height: 30px;
+  letter-spacing: 0em;
 }
 .link {
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
 }
+
+.site-nav-item {
+  margin-right: 50px;
+}
+.site-nav-item:nth-child(5) {
+  margin-right: 0;
+}
+
 .button-header {
-    color: var(--white-color);
-    background-color: transparent;
-    font-family: Roboto;
-    font-size: 13px;
-    font-weight: inherit;
-    line-height: 16px;
-    letter-spacing: 0em;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    padding: 12px 16px;
-    margin-right: auto;
-/* height: 40px;
-    width: 138px; */
+  color: var(--white-color);
+  background-color: transparent;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 1.23;
+  letter-spacing: 0em;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 12px 16px;
   
 }
 .container {
-    width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 3px solid tomato;
 }
 .header .container {
-    display: flex;
-    align-items: center;
-   
+  display: flex;
+  align-items: center;
 }
 .logo.link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-image {
-    margin-right: 8px;
-
+  margin-right: 8px;
 }
 .site-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 52px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 27px;
 }
 .site-nav > .list {
-    display: flex;
+  display: flex;
 }
 /* HERO */
- .section-hero {
-     background-color: var(--black-color);
- }
- .hero {
-     color: var(--white-color);
-    
-    font-size: 42px;
-    line-height: 50px;
-    letter-spacing: 0em; 
- }
- .text {
-color: var(--white-color);
 
-font-size: 11px;
-line-height: 2.72;
-/* letter-spacing: 0em; */
- }
- .link-button {
-     color: var(--white-color);
-     background-color: var(--akcent-color);
-padding: 15px 37px;
-    font-family: inherit;
-    font-size: 15px;
-   
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-decoration: none;
-    border: transparent;
-    border-radius: 4px;
-    /* height: 60px;
-        width: 166px; */
- }
-
- /* Your reliable web and app development partner*/
-
- .section-tittle {
-     font-size: 26px;
-     line-height: 1.38;
-     color: var(--prymery-text-color);
- }
- .text-tittle {
-     color: var(--prymery-text-color);
-     line-height: 1.88;
- }
- .desc {
-    font-size: 11px;
-    line-height: 2.72;
-    color: var(--prymery-text-color);
- }
-
- /* Where are you now?*/
- .tittle {
-    font-size: 41px;
-    line-height: 1.22;
-  font-weight: 400;
-    color: var(--tittle-text-color);
- }
- .desc-tittle {
-    font-size: 12px;
-    line-height: 2.5;
-
- color: var(--prymery-text-color);
- }
- .button-link {
-     
-   font-family: inherit;
-    font-size: 24px;
-    line-height: 1.58;
-   border: none;
-    color: var(--tittle-text-color);
-    background-color: transparent;
- }
- .button-link:hover,
- .button-link:focus {
-     color: var(--akcent-color);
- }
- .heading {
-    font-size: 19px;
-    line-height: 1.47;
-color: var(--tittle-text-color);
- }
-.btn {
-    font-size: 15px;
-        line-height: 2;
-        letter-spacing: 0em;
-        font-family: inherit;
-padding: 15px 49px;
-background-color: var(--akcent-color);
-color: var(--white-color);
-border-radius: 4px;
+.section-hero {
+  background-color: var(--black-color);
+  padding-top: 240px;
+  padding-bottom: 240px;
 }
- /* We're proud of our work */
- .section-proud {
-     background-color: palevioletred;
- }
- .title {
-    font-size: 41px;
-    line-height: 1.22;
+.hero {
+  color: var(--white-color);
+  margin-bottom: 35px;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 0em;
+}
+.text {
+  margin-bottom: 35px;
+  width: 411px;
+  font-size: 11px;
+  line-height: 2.72;
+  color: var(--white-color);
+  /* letter-spacing: 0em; */
+}
+.link-button {
+ padding: 15px 37px;
+
+  font-family: inherit;
+  font-size: 15px;
+line-height: 30px;
+  letter-spacing: 0em;
+
+  border: transparent;
+  border-radius: 4px;
+color: var(--white-color);
+    background-color: var(--akcent-color);
+}
+
+/* Your reliable web and app development partner*/
+.benefits-box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px 25px;
+    width: 1190px;
     
-    color: var(--white-color);
- }
- .number {
-    font-size: 42px;
-    line-height: 1.19;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 0px;
+     outline: 1px solid blue;
+}
+.box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 17px;
+    width: 403px;
+}
 
-    color: var(--white-color);
- }
- .heading-proud {
-    font-size: 24px;
-    line-height: 1.58;
-color: #000000;
- }
+.benefits {
+    display: flex;
+   flex-wrap: wrap;
+    align-items: baseline;
+    flex-basis: content;
+    
+}
+.benefits-item {
+    margin-right: 100px;
+    margin-bottom: 51px;
+    width: 158px;
+}
+.benefits-item:nth-child(3) {
+    margin-right: 0;
+}
+.benefits-item:nth-child(6) {
+    margin-right: 0;
+}
 
- /*  */
- .caption {
-     font-weight: 400;
-    font-size: 42px;
-    line-height: 1.19;
-  
-    color: var(--tittle-text-color);
- }
+.section-tittle {
+  font-size: 26px;
+  line-height: 1.38;
+  color: var(--tittle-text-color);
+  width: 297px;
+}
+.text-tittle {
+    
+  color: var(--prymery-text-color);
+  line-height: 1.88;
+  width: 335px;
+}
+.desc {
+  font-size: 11px;
+  line-height: 2.72;
+  color: var(--prymery-text-color);
+}
 
- /* Regional partnerships */
+/* Where are you now?*/
+.section-stage {
+    padding: 160px 125px 146px 125px;
+}
+.tittle {
+    text-align: center;
+  font-size: 41px;
+  line-height: 1.22;
+  font-weight: 400;
+  color: var(--tittle-text-color);
+}
+.desc-tittle {
+    text-align: center;
+  font-size: 12px;
+  line-height: 2.5;
+
+  color: var(--prymery-text-color);
+}
+.stage {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+}
+.list-stage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+        margin-bottom: 50px
+        
+}
+.item-list-stage {
+  margin-right: 40px;
+  margin-bottom: 40px;
+    padding: 38px 60px 41px 40px;
+    width: 560px;
+    border: 1px solid #E8E8E8;
+        border-radius: 0px;
+}
+.item-list-stage:nth-child(2n) {
+    margin-right: 0;
+}
+.item-list-stage:nth-child(-n + 3) {
+    margin-bottom: 0;
+}
+.item-list-stage:nth-child(4) {
+    margin-bottom: 0;
+}
+.item-stage {
+    margin-right: 100px;
+}
+.item-stage:last-child {
+    margin-right: 0;
+}
+.button-link {
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1.58;
+  border: none;
+  color: var(--tittle-text-color);
+  background-color: transparent;
+}
+.button-link:hover,
+.button-link:focus {
+  color: var(--akcent-color);
+}
+.heading {
+    margin-bottom: 23px;
+    
+  font-size: 19px;
+  line-height: 1.47;
+  color: var(--tittle-text-color);
+}
+.btn {
+    align-items: center;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0em;
+  font-family: inherit;
+  padding: 15px 49px;
+  background-color: var(--akcent-color);
+  color: var(--white-color);
+  border-radius: 4px;
+}
+/* We're proud of our work */
+.section-proud {
+  background-color: palevioletred;
+}
+.title {
+  font-size: 41px;
+  line-height: 1.22;
+
+  color: var(--white-color);
+}
+.number {
+  font-size: 42px;
+  line-height: 1.19;
+
+  color: var(--white-color);
+}
+.heading-proud {
+  font-size: 24px;
+  line-height: 1.58;
+  color: #000000;
+}
+
+/*  */
+.caption {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.19;
+
+  color: var(--tittle-text-color);
+}
+
+/* Regional partnerships */
 .text-app {
-    font-size: 15px;
-    line-height: 2;
-color: #737373;
+  font-size: 15px;
+  line-height: 2;
+  color: #737373;
 }
 .text-logo {
-    font-size: 20px;
-line-height: 1.4;
-color: #000000;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
 }
 
 /* REQWEST */
 .button-reqwest {
-    padding: 18px 47px;
-    text-align: center;
-    color: var(--white-color);
-    background-color: var(--akcent-color);
-    height: 60px;
-        width: 174px;
-        border: transparent;
-        border-radius: 4px;
-        font-family: inherit;
-        font-size: 12px;
+  padding: 18px 47px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--akcent-color);
+  height: 60px;
+  width: 174px;
+  border: transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 12px;
 }
 .modal-caption {
-    
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 1.52;
-        letter-spacing: 0em;
-        color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.52;
+  letter-spacing: 0em;
+  color: #000000;
 }
 
 /* RESOURCES */
 .subtitle {
-   
-        font-size: 14px;
-        
-        line-height: 2/14;
-        letter-spacing: 0em;
-       
+  font-size: 14px;
+
+  line-height: 2/14;
+  letter-spacing: 0em;
 }
 .desc-resourse {
-    
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 1.58;
-        letter-spacing: 0em;
-        color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: 0em;
+  color: #000000;
 }
 
 /* FAQ */
 .caption-text {
-    
-        font-size: 13px;
-        
-        line-height: 2.3;
-        letter-spacing: 0em;
-        
+  font-size: 13px;
+
+  line-height: 2.3;
+  letter-spacing: 0em;
 }
 .text-list {
-   
-        font-size: 19px;
-     
-        line-height: 1.26;
-        letter-spacing: 0em;
-        color: #000000;
+  font-size: 19px;
+
+  line-height: 1.26;
+  letter-spacing: 0em;
+  color: #000000;
 }
 
 /* kickstart your tech career */
 
 .link.career {
-    /* display: flex;
+  /* display: flex;
     padding: 16px 42px; */
-text-align: center;
-height: 62px;
-    width: 200px;
-        font-size: 15px;
-     
-        line-height: 2;
-        letter-spacing: 0em;
-        color: #0A8BFE;
-        
-    border: 2px solid #E8E8E8;
-    border-radius: 30px;
-   
+  text-align: center;
+  height: 62px;
+  width: 200px;
+  font-size: 15px;
+
+  line-height: 2;
+  letter-spacing: 0em;
+  color: #0a8bfe;
+
+  border: 2px solid #e8e8e8;
+  border-radius: 30px;
 }
